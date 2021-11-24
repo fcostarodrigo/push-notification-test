@@ -17,7 +17,11 @@ async function subscribe() {
     applicationServerKey: applicationServerKey,
   });
 
-  alert(JSON.stringify(subscription, null, 2));
+  document.querySelector("#subscription").innerHTML = JSON.stringify(
+    subscription,
+    null,
+    2
+  );
 }
 
 document.querySelector("button").addEventListener("click", subscribe);
