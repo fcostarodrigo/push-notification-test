@@ -18,5 +18,5 @@
     applicationServerKey: applicationServerKey,
   });
 
-  console.log(JSON.stringify(subscription, null, 2));
+  alert(JSON.stringify(subscription, null, 2));
 }.call(this));
